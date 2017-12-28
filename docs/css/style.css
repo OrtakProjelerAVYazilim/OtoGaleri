@@ -1,11 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@font-face {
+    font-family: 'Amita';
+    src: url('Amita-Regular.woff2') format('woff2'),
+        url('Amita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Bold.woff2') format('woff2'),
+        url('DancingScript-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript-Regular.woff2') format('woff2'),
+        url('DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Open Sans';
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype'),
+    src: url('../fonts/Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf') format('truetype'),
 } /* BU FONTA DAHA SONRA BAKILACAK ÇALIŞMADI */
 @font-face {
     font-family: 'Segoe';
@@ -713,11 +735,12 @@ footer {
     margin-bottom: 0;
     font-size: 40px;
     padding-bottom: 10px;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Dancing Script-Bold', cursive;
     color: #000;
     display: block;
     padding-top: 20px;
     text-align: center;
+    font-weight: bold;
 }
 .content-page {
     padding: 20px 0 30px 0;
