@@ -140,10 +140,9 @@
                     <span class="input-group-btn"><button id="car_search_button" class="btn btn-success" type="button">Ara</button></span>
                     <!-- Example single danger button -->
                     <div class="btn-group">
-                        <button type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button id="det_ser_but" type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                          Detaylı Ara
-                     </button>
-
+                        </button>
                     </div>
                 </form>
             </div>
@@ -154,7 +153,7 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <form>
-                            <input list="cars" name="detailsearch" placeholder="MARKA">
+                            <input id="marka" list="cars" name="detailsearch" placeholder="MARKA">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -162,27 +161,7 @@
                               <option value="Opera">
                               <option value="Safari">
                             </datalist>
-                            <input list="cars" name="detailsearch" placeholder="İL">
-                            <datalist id="browsers">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
-                        </form>
-                    </div>
-                    <div class="col-sm-2">
-                        <form>
-                            <input list="cars" name="detailsearch" placeholder="MODEL">
-                            <datalist id="browsers">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
-                            <input list="cars" name="detailsearch" placeholder="KASA TİPİ">
+                            <input id="il" list="cars" name="detailsearch" placeholder="İL">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -194,7 +173,7 @@
                     </div>
                     <div class="col-sm-2">
                         <form>
-                            <input list="cars" name="detailsearch" placeholder="ŞANZIMAN">
+                            <input id="model" list="cars" name="detailsearch" placeholder="MODEL">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -202,27 +181,7 @@
                               <option value="Opera">
                               <option value="Safari">
                             </datalist>
-                            <input list="cars" name="detailsearch" placeholder="ARAÇ TİPİ">
-                            <datalist id="browsers">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
-                        </form>
-                    </div>
-                    <div class="col-sm-2">
-                        <form>
-                            <input list="cars" name="detailsearch" placeholder="YAKIT TİPİ">
-                            <datalist id="browsers">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
-                            <input list="cars" name="detailsearch" placeholder="MOTOR HACMİ">
+                            <input id="kasa_tipi" list="cars" name="detailsearch" placeholder="KASA TİPİ">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -234,7 +193,7 @@
                     </div>
                     <div class="col-sm-2">
                         <form>
-                            <input list="cars" name="detailsearch" placeholder="YIL">
+                            <input id="vites" list="cars" name="detailsearch" placeholder="ŞANZIMAN">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -242,7 +201,7 @@
                               <option value="Opera">
                               <option value="Safari">
                             </datalist>
-                            <input list="cars" name="detailsearch" placeholder="KM">
+                            <input id="arac_tip" list="cars" name="detailsearch" placeholder="ARAÇ TİPİ">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -254,7 +213,7 @@
                     </div>
                     <div class="col-sm-2">
                         <form>
-                            <input list="cars" name="detailsearch" placeholder="YIL">
+                            <input id="yakit" list="cars" name="detailsearch" placeholder="YAKIT TİPİ">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -262,7 +221,47 @@
                               <option value="Opera">
                               <option value="Safari">
                             </datalist>
-                            <input list="cars" name="detailsearch" placeholder="KM">
+                            <input id="motor_hacmi" list="cars" name="detailsearch" placeholder="MOTOR HACMİ">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                        </form>
+                    </div>
+                    <div class="col-sm-2">
+                        <form>
+                            <input id="min_year" list="cars" name="detailsearch" placeholder="Min_YIL">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                            <input id="min_km" list="cars" name="detailsearch" placeholder="Min_KM">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                        </form>
+                    </div>
+                    <div class="col-sm-2">
+                        <form>
+                            <input id="max_year" list="cars" name="detailsearch" placeholder="Max_YIL">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                            <input id="max_km" list="cars" name="detailsearch" placeholder="Max_KM">
                             <datalist id="browsers">
                               <option value="Internet Explorer">
                               <option value="Firefox">
@@ -568,6 +567,8 @@
                 $("#topcontrol").fadeOut(500); /* Yukarı çık butonu ne kadar hızla ortadan kaybolsun. 500 milisaniye = 0,5 saniye. Bu sayı değiştirilebilir. */
         });
         $(document).ready(function() {
+            caseTest();
+            $("input[name*='detailsearch']").val("");
             $("#topcontrol").click(function() { /* Yukarı çık butonuna tıklanıldığında aşağıdaki satır çalışır. */
                 $("html, body").animate({
                     scrollTop: "0"
