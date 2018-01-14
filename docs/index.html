@@ -140,10 +140,9 @@
                     <span class="input-group-btn"><button id="car_search_button" class="btn btn-success" type="button">Ara</button></span>
                     <!-- Example single danger button -->
                     <div class="btn-group">
-                        <button type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button id="det_ser_but" type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                          Detaylı Ara
-                     </button>
-
+                        </button>
                     </div>
                 </form>
             </div>
@@ -151,6 +150,7 @@
 
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
+<<<<<<< HEAD
                 <form>
                     <div class="form-row">
                         <div class="col">
@@ -195,6 +195,52 @@
                         </div>
                     </div>
                 </form>
+=======
+                         <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Marka">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Model">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Şanzıman">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Yakıt Tipi">
+    </div>
+    <div class="col">
+     <label>Yıl</label>
+      <input type="text" class="form-control form-control-sm" placeholder="Yıl" maxlength="5">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Yıl" maxlength="5">
+    </div>
+    </div>
+    <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="İl">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Kasa Tipi">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Araç Tipi">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Motor Hacmi">
+    </div>
+    <div class="col">
+     <label>Km</label>
+      <input type="text" class="form-control form-control-sm yil" placeholder="km">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-sm yil" placeholder="km">
+    </div>
+  </div>
+</form>
+>>>>>>> cea8e6c13fdc6165787107d4aada4345f488119a
             </div>
             <!--. close card card-body-->
         </div>
@@ -489,6 +535,8 @@
                 $("#topcontrol").fadeOut(500); /* Yukarı çık butonu ne kadar hızla ortadan kaybolsun. 500 milisaniye = 0,5 saniye. Bu sayı değiştirilebilir. */
         });
         $(document).ready(function() {
+            caseTest();
+            $("input[name*='detailsearch']").val("");
             $("#topcontrol").click(function() { /* Yukarı çık butonuna tıklanıldığında aşağıdaki satır çalışır. */
                 $("html, body").animate({
                     scrollTop: "0"
