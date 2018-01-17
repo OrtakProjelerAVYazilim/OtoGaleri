@@ -817,8 +817,16 @@ p {
 
 /* HAKKIMIZDA SAYFASI */
 
-.input .form-control .fprm-control-sm .year {
-    max-width: 10px;
+.selectbox {
+    width: 100%;
+    border: 1px solid #ced4da;
+    height: 31px;
+    border-radius: 0.25rem;
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+}
+select option:first-child {
+    color:red!important;
 }
 
 /* Small devices (landscape phones, 319px and down) */
