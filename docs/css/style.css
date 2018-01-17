@@ -825,7 +825,7 @@ p {
     margin-bottom: 4px;
     font-size: 0.875rem;
 }
-.selectbox option:first-child {
+.selectbox: {
     color:red!important;
 }
 
