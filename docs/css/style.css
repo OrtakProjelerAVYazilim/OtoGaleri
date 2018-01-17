@@ -825,8 +825,8 @@ p {
     margin-bottom: 4px;
     font-size: 0.875rem;
 }
-.selectbox: {
-    color:red!important;
+.selectbox {
+    color:gray!important;
 }
 
 /* Small devices (landscape phones, 319px and down) */
