@@ -1,13 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <!--Bu kod kullanıcının cihazında görünür alanı sabitleyecektir.-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Internet Explorer Uyumluluk Görünüm Meta Tag-->
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta name="keywords" content="Bursa oto galeri, Bursa otomobil galeri, Bursa 2. el otomobil" />
     <meta name="description" content="Kurumsal Oto Galeri Teması" />
     <meta name="author" content="Volkan Korkmaz, Adnan Erdoğan" />
+    <!--Güncel sayfanın dizine eklenmesini raporlar; bağlantıların ve linklerin izlenmesini botlara bildirir.-->
     <meta name="robots" content="index; follow" />
     <meta name="copyright" content="(c) 2014 egitimkanalim.com Tüm Hakları Saklıdır." />
     <meta name="designer" content="A & V Yazılım" />
@@ -17,11 +20,11 @@
     <title>Galeri Şafak | Bursa Oto Galeri, Bursa Otomobil Galeri, Bursa 2. El Otomobil</title>
     <!--Style CSS-->
     <link href="css/style.css" rel="stylesheet">
-    <!--Bootstrap Bootstrap-->
+    <!--Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!--Smart Menü CSS-->
     <link href="css/smartmenus.bootstrap-4.css" rel="stylesheet">
-    <!-- Adnan'ın Yazdığı Search CSS-->
+    <!-- Search CSS-->
     <link href="css/main.css" rel="stylesheet">
     <!--Font-awesome CSS-->
     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
@@ -31,13 +34,15 @@
 
 <body>
     <div class="container">
+        <!--mt-4 sınıfı üstten 4 margin değeri vermemizi sağlar. -->
         <header id="header" class="mt-4">
-            <div class="row">
+            <div class="row header">
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                     <div class="logo"><img class="img-fluid" src="images/logo.png" alt="Galeri Şafak"></div>
                 </div>
                 <!--. close col-lg-5 col-md-5 col-sm-5 col-xs-5-->
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-xs-none d-none d-lg-block d-md-block d-sm-block">
+                <!--Burada "display d-none" kuralının ufak cihazlar için "none" değerini almasını diğer cihazlar için "block" değerini almasını söylüyoruz-->
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-none d-sm-block">
                     <p class="float-left"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Barış Mh. İzmir Yolu No : 310 - Nilüfer / BURSA</p>
                     <p class="float-right"><i class="fa fa-phone-square mr-2" aria-hidden="true"></i>0 224 443 03 30</p>
                     <div class="clearfix"></div>
@@ -50,6 +55,7 @@
         </header>
         <!-- /header -->
         <!-- PANEL VE LOGOLAR -->
+        <!--my-4 sınıfı alt ve üstten margin vermemizi sağlar.-->
         <div class="panel my-4">
             <div class="logos">
                 <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
@@ -85,6 +91,7 @@
         <!-- PANEL VE LOGOLAR -->
 
         <!-- Navbar -->
+        <!--mb-4 sınıfı alt ve üstten margin rounded ise border-radius vermemizi sağlar. Default border-radius değeri 2'dir.-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
             <a class="navbar-brand" href="index.html">Şafak Galeri</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -370,7 +377,7 @@
                 <div class="form-row">
 
                     <div class="col-sm-12">
-						<button type="button" class="btn btn-danger float-right">ARA</button>
+                        <button type="button" class="btn btn-danger float-right">ARA</button>
 
                         <button type="button" class="btn btn-dark float-right">ARAMAYI TEMİZLE</button>
 
@@ -382,7 +389,7 @@
             <!--. close card card-body-->
         </div>
         <!--. close collapse #collapseExample-->
-        <section>
+        <section id="section">
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-xs-5 thumb">
                     <div id="pager-products">
@@ -606,8 +613,9 @@
         </section>
         <div id="topcontrol" title="Sayfa Başına Dön" style="position: fixed; bottom: 25px; right: 25px; opacity: 1; cursor: pointer;"><a href="javascript:;"></a>
             <img src="images/top.png" class="img-fluid"></div>
-        <footer class="my-4">
-            <div class="row">
+        <!--my-4 sınıfı alt ve üstten margin vermemizi sağlar.-->
+        <footer id="footer" class="my-4">
+            <div class="row footer">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     <img src="images/footer_logo.png" alt="Galeri Şafak" class="img-fluid">
                 </div>
@@ -652,9 +660,9 @@
     <script src="js/jquery.smartmenus.js"></script>
     <!-- SmartMenus jQuery Bootstrap Addon -->
     <script src="js/jquery.smartmenus.bootstrap-4.js"></script>
-    <!-- Adnan'ın Search için yazdığı script -->
+    <!-- Search script -->
     <script src="js/search.js"></script>
-    <!-- Bu tooltipler sayesinde js kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
+    <!-- Bu tooltipler sayesinde JS kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
     <script>
         // Init tooltip
         $('[data-toggle="tooltip"]').tooltip();

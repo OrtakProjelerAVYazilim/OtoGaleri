@@ -1,13 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <!--Bu kod kullanıcının cihazında görünür alanı sabitleyecektir.-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Internet Explorer Uyumluluk Görünüm Meta Tag-->
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta name="keywords" content="Bursa oto galeri, Bursa otomobil galeri, Bursa 2. el otomobil" />
     <meta name="description" content="Kurumsal Oto Galeri Teması" />
     <meta name="author" content="Volkan Korkmaz, Adnan Erdoğan" />
+    <!--Güncel sayfanın dizine eklenmesini raporlar; bağlantıların ve linklerin izlenmesini botlara bildirir.-->
     <meta name="robots" content="index; follow" />
     <meta name="copyright" content="(c) 2014 egitimkanalim.com Tüm Hakları Saklıdır." />
     <meta name="designer" content="A & V Yazılım" />
@@ -19,11 +22,11 @@
     <link href=css/plug.css rel=stylesheet media=all>
     <!--Style CSS-->
     <link href="css/style.css" rel="stylesheet">
-    <!--Bootstrap Bootstrap-->
+    <!--Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!--Smart Menü CSS-->
     <link href="css/smartmenus.bootstrap-4.css" rel="stylesheet">
-    <!-- Adnan'ın Yazdığı Search CSS-->
+    <!-- Search CSS-->
     <link href="css/main.css" rel="stylesheet">
     <!--Font-awesome CSS-->
     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
@@ -34,13 +37,15 @@
 
 <body>
     <div class="container">
+       <!--mt-4 sınıfı üstten 4 margin değeri vermemizi sağlar. -->
         <header id="header" class="mt-4">
-            <div class="row">
+            <div class="row header">
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                     <div class="logo"><img class="img-fluid" src="images/logo.png" alt="Galeri Şafak"></div>
                 </div>
                 <!--. close col-lg-5 col-md-5 col-sm-5 col-xs-5-->
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-xs-none d-none d-lg-block d-md-block d-sm-block">
+                <!--Burada "display d-none" kuralının ufak cihazlar için "none" değerini almasını diğer cihazlar için "block" değerini almasını söylüyoruz-->
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-none d-sm-block">
                     <p class="float-left"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Barış Mh. İzmir Yolu No : 310 - Nilüfer / BURSA</p>
                     <p class="float-right"><i class="fa fa-phone-square mr-2" aria-hidden="true"></i>0 224 443 03 30</p>
                     <div class="clearfix"></div>
@@ -53,6 +58,7 @@
         </header>
         <!-- /header -->
         <!-- PANEL VE LOGOLAR -->
+        <!--my-4 sınıfı alt ve üstten margin vermemizi sağlar.-->
         <div class="panel my-4">
             <div class="logos">
                 <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
@@ -88,6 +94,7 @@
         <!-- PANEL VE LOGOLAR -->
 
         <!-- Navbar -->
+        <!--mb-4 sınıfı alt ve üstten margin rounded ise border-radius vermemizi sağlar. Default border-radius değeri 2'dir.-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
             <a class="navbar-brand" href="index.html">Şafak Galeri</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,18 +150,248 @@
                     <span class="input-group-btn"><button id="car_search_button" class="btn btn-success" type="button">Ara</button></span>
                     <!-- Example single danger button -->
                     <div class="btn-group">
-                        <button id="detail_search_button" type="button" class="btn btn-success dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Detaylı Ara
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
+                        <button type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                         Detaylı Ara
+                     </button>
                     </div>
                 </form>
             </div>
         </nav>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <!--Birinci Satır-->
+                <div class="form-row">
+                    <!--Marka-->
+                    <div class="col-sm-3">
+                        <select name="marka" class="selectbox">
+                                <option value="0" class="#">Marka</option> 
+                                <option value="1" class="#">BMW</option>                  
+                                <option value="2" class="#">Mercedes</option>
+                                <option value="3" class="#">Dacia</option>
+                                <option value="4" class="#">Tofaş</option>
+                            </select>
+                    </div>
+                    <!--Marka-->
 
-        <section>
+                    <!--Model-->
+                    <div class="col-sm-3">
+                        <select name="model" class="selectbox" required>
+                                <option value="0" selected>Model</option> 
+                                <option value="1">SERIES 1</option>                  
+                                <option value="2">SERIES 2</option>
+                                <option value="3">SLS AMG</option>
+                                <option value="4">CLK</option>
+                                <option value="5">Duster</option>
+                                <option value="6">Stepway</option>
+                                <option value="7">Logan</option>
+                                <option value="8">Murat 131</option>
+                                <option value="9">Murat 124</option>
+                            </select>
+                    </div>
+                    <!--Model-->
+
+                    <!--Kasa Tipi-->
+                    <div class="col-sm-3">
+                        <select name="ktipi" class="selectbox" required>
+                                <option value="0" "selected">Kasa Tipi</option> 
+                                <option value="1">Cabrio</option>                  
+                                <option value="2">Coupe</option>
+                                <option value="3">Sedan</option>
+                                <option value="4">Pick-Up</option>
+                                <option value="5">SUV</option>
+                                <option value="6">Kamyonet</option>
+                                <option value="7">Station Wagon</option>
+                                <option value="8">Hatchback</option>
+                                <option value="9">Van / Panelvan</option>
+                                <option value="9">Minibüs</option>
+                            </select>
+                    </div>
+                    <!--Kasa Tipi-->
+
+                    <!--Ödeme Türü-->
+                    <div class="col-sm-1">
+                        <div class="selectprice">
+                            <input type="hidden" value="">
+                            <select name="price" class="selectbox" required>
+                                <option value="0" style="width: 67px !important;">TL</option> 
+                                <option value="1">USD</option>                  
+                                <option value="2">EURO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Ödeme Türü-->
+
+                    <!--Fiyat-->
+                    <div class="col-sm-1">
+                        <div class="slct-year">
+                            <input type="text" placeholder="Fiyat" class="fiyat" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="slct-year">
+                            <input type="text" placeholder="Fiyat" class="fiyat" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <!--Fiyat-->
+
+                </div>
+                <!--. close form-row-->
+
+                <!--İkinci Satır-->
+                <div class="form-row">
+                    <!--İl-->
+                    <div class="col-sm-3">
+                        <select class="selectbox" id="#">
+                                    <option value="0">İl</option>
+                                    <option value="01">Adana</option>
+                                    <option value="06">Ankara</option>
+                                    <option value="07">Antalya</option>
+                                    <option value="09">Aydın</option>
+                                    <option value="10">Balıkesir</option>
+                                    <option value="16">Bursa</option>
+                                    <option value="17">Çanakkale</option>
+                                    <option value="19">Çorum</option>
+                                    <option value="20">Denizli</option>
+                                    <option value="21">Diyarbakır</option>
+                                    <option value="25">Erzurum</option>
+                                    <option value="26">Eskişehir</option>
+                                    <option value="27">Gaziantep</option>
+                                    <option value="28">Giresun</option>
+                                    <option value="31">Hatay</option>
+                                    <option value="34">İstanbul</option>
+                                    <option value="35">İzmir</option>
+                                    <option value="46">Kahramanmaraş</option>
+                                    <option value="38">Kayseri</option>
+                                    <option value="41">Kocaeli</option>
+                                    <option value="42">Konya</option>
+                                    <option value="44">Malatya</option>
+                                    <option value="45">Manisa</option>
+                                    <option value="33">Mersin</option>
+                                    <option value="54">Sakarya</option>
+                                    <option value="55">Samsun</option>
+                                    <option value="63">Şanlıurfa</option>
+                                    <option value="61">Trabzon</option>
+                        </select>
+                    </div>
+                    <!--İl-->
+
+                    <!--Aktarma Türü-->
+                    <div class="col-sm-3">
+                        <select name="il" class="selectbox" required>
+                                <option value="0">Aktarma Türü</option> 
+                                <option value="1">4x4</option>                  
+                                <option value="2">Önden Çekiş</option>
+                                <option value="3">Arkadan İtiş</option>
+                        </select>
+                    </div>
+                    <!--Aktarma Türü-->
+
+                    <!--Motor Hacmi-->
+                    <div class="col-sm-3">
+                        <select name="mhacim" class="selectbox" required>
+                                <option value="0">Motor Hacmi</option> 
+                                <option value="1">0 - 1000 cm<sup>3</sup></option>                  
+                                <option value="2">1001 - 1200 cm<sup>3</sup></option>
+                                <option value="3">1201 - 1400 cm<sup>3</sup></option>
+                                <option value="4">1401 - 1600 cm<sup>3</sup></option>
+                                <option value="5">1601 - 1800 cm<sup>3</sup></option>
+                                <option value="6">1801 - 2000 cm<sup>3</sup></option>
+                                <option value="7">2001 cm<sup>3</sup> ve üzeri</option>
+                        </select>
+                    </div>
+                    <!--Motor Hacmi-->
+
+                    <!--Km-->
+                    <div class="col-sm-1">
+                        <label class="selectboxlabelkm">Km</label>
+                    </div>
+                    <!--Km-->
+                    <!--Km-->
+                    <div class="col-sm-1">
+                        <div class="selectkm">
+
+                            <input type="text" placeholder="Km" class="kmLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <!--Km-->
+
+                    <!--Km-->
+                    <div class="col-sm-1">
+                        <div class="selectkm">
+                            <input type="text" placeholder="Km" class="kmLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <!--Km-->
+
+                </div>
+                <!--. close form-row-->
+
+                <!--Üçüncü Satır Satır-->
+                <div class="form-row">
+                    <!--Şanzıman-->
+                    <div class="col-sm-3">
+                        <select name="sanziman" class="selectbox" required>
+                                <option value="0">Şanzıman</option> 
+                                <option value="1">Manuel</option>                  
+                                <option value="2">Otomatik</option>
+                        </select>
+                    </div>
+                    <!--Şanzıman-->
+
+                    <!--Yakıt Tipi-->
+                    <div class="col-sm-3">
+                        <select name="ytipi" class="selectbox" required>
+                                <option value="0">Yakıt Tipi</option> 
+                                <option value="1">Benzin</option>                  
+                                <option value="2">Dizel</option>
+                                <option value="2">LPG</option>
+                        </select>
+                    </div>
+                    <!--Yakıt Tipi-->
+
+                    <div class="col-sm-3 auto"></div>
+                    <!--Yıl-->
+                    <div class="col-sm-1">
+                        <label class="selectboxlabelyear">Yıl</label>
+                    </div>
+                    <!--Yıl-->
+                    <!--Yıl-->
+                    <div class="col-sm-1">
+                        <div class="selectyear">
+
+                            <input type="text" placeholder="Yıl" class="yearLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <!--Yıl-->
+
+                    <!--Yıl-->
+                    <div class="col-sm-1">
+                        <div class="selectyear">
+                            <input type="text" placeholder="Yıl" class="yearLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height: 31px!important">
+                        </div>
+                    </div>
+                    <!--Yıl-->
+
+                </div>
+                <!--. close form-row-->
+
+
+                <div class="form-row">
+
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-danger float-right">ARA</button>
+
+                        <button type="button" class="btn btn-dark float-right">ARAMAYI TEMİZLE</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--. close card card-body-->
+        </div>
+        <!--. close collapse #collapseExample-->
+        <section id="section">
             <div class="container">
                 <h1 class="page-title">HAKKIMIZDA</h1>
                 <div id="content-txt" class="content-page overflow">
@@ -344,8 +581,8 @@
         </section>
         <div id="topcontrol" title="Sayfa Başına Dön" style="position: fixed; bottom: 25px; right: 25px; opacity: 1; cursor: pointer;"><a href="javascript:;"></a>
             <img src="images/top.png" class="img-fluid"></div>
-        <footer class="my-4">
-            <div class="row">
+        <footer id="footer" class="my-4">
+            <div class="row footer">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     <img src="images/footer_logo.png" alt="Galeri Şafak" class="img-fluid">
                 </div>
@@ -395,7 +632,7 @@
     <script src="js/jquery.smartmenus.js"></script>
     <!-- SmartMenus jQuery Bootstrap Addon -->
     <script src="js/jquery.smartmenus.bootstrap-4.js"></script>
-    <!-- Adnan'ın Search için yazdığı script -->
+    <!-- Search script -->
     <script src="js/search.js"></script>
 
     <!-- Bu tooltipler sayesinde js kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
