@@ -118,6 +118,33 @@ body {
     float: left;
 }
 
+#links {
+	float:right; 
+	height:37px; 
+	margin-top:30px;
+}
+#links a {
+	width:244px; 
+	height:37px; 
+	text-indent:-1500px; 
+	display:block; 
+	float:left; 
+	margin:0 3px; 
+	border-radius:4px 4px 0 0;
+}
+#links a.buy {
+	background:url(../images/arac-almak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.buy:hover {
+	background:url(../images/arac-almak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.sell {
+	background:url(../images/arac-satmak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.sell:hover {
+	background:url(../images/arac-satmak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
 /* LOCATION AND LOGO
 -------------------------------------------------- */
 
@@ -297,7 +324,7 @@ body {
 }
 
 .select-km {
-    height: 31px;
+    
 }
 .select-km input  {
     border-radius: 0.25rem;
@@ -341,6 +368,7 @@ body {
     font-weight: bold !important;
     font-size: 0.875rem !important;
     cursor: pointer !important;
+    float: right;
 }
 
 .btn-dark:hover {
@@ -358,6 +386,7 @@ body {
     font-size: 0.875rem !important;
     cursor: pointer !important;
     margin-right: 5px !important;
+    float: right;
 }
 
 .btn-danger:hover {
@@ -882,6 +911,34 @@ p .web .fa-desktop {
 /* İLETİŞİM SAYFA İÇERİĞİ 
 -------------------------------------------------- */
 
+/* ARAÇ ALMAK İSTİYORUM SAYFA İÇERİĞİ 
+-------------------------------------------------- */
+
+.form-header {
+    color: red;
+    padding-left: 0px!important;
+    font-weight: bold;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.carbuy {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da!important;
+    text-align: center!important;
+    font-size: 13px;
+    color: #444;
+    margin-top:2.5px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%)!important;
+    height: 33px!important;
+}
+
+/* ARAÇ ALMAK İSTİYORUM SAYFA İÇERİĞİ 
+-------------------------------------------------- */
+
 /* FOOTER 
 -------------------------------------------------- */
 
@@ -948,18 +1005,22 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767px) {
     
-    /* LOKASYON */
-    
     .location > p {
         font-size: 0.5rem;
+    } 
+    label.aracsatis {
+        font-size: 0.5rem;
+        font-weight: 500;
     }
 }
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991px) {
     
-    /* LOKASYON */
-
+    label.aracsatis {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
     .location > p {
         font-size: 0.7rem;
     }
