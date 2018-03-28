@@ -118,6 +118,7 @@ body {
     float: left;
 }
 
+<<<<<<< HEAD
 .links {
 	float:right; 
 	 
@@ -147,6 +148,44 @@ body {
 
 /*jssor slider loading skin spin css*/
 
+=======
+#links {
+	float:right; 
+	height:37px; 
+	margin-top:30px;
+}
+#links a {
+	width:244px; 
+	height:37px; 
+	text-indent:-1500px; 
+	display:block; 
+	float:left; 
+	margin:0 3px; 
+	border-radius:4px 4px 0 0;
+}
+#links a.buy {
+	background:url(../images/arac-almak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.buy:hover {
+	background:url(../images/arac-almak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.sell {
+	background:url(../images/arac-satmak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#links a.sell:hover {
+	background:url(../images/arac-satmak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+/* LOCATION AND LOGO
+-------------------------------------------------- */
+
+
+/* KAYAN LOGOLU SLİDER
+-------------------------------------------------- */
+
+/*jssor slider loading skin spin css*/
+
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 .jssorl-009-spin img {
     animation-name: jssorl-009-spin;
     animation-duration: 1.6s;
@@ -381,6 +420,7 @@ body {
     margin-right: 5px !important;
     float: right;
 }
+<<<<<<< HEAD
 
 .btn-danger:hover {
     background-color: white !important;
@@ -388,6 +428,15 @@ body {
     border-color: red !important;
 }
 
+=======
+
+.btn-danger:hover {
+    background-color: white !important;
+    color: red !important;
+    border-color: red !important;
+}
+
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 
 /* DETAILED SEARCH 
 -------------------------------------------------- */
@@ -741,6 +790,7 @@ ul.gallery li {
     overflow: hidden;
     min-height: 530px;
 }
+<<<<<<< HEAD
 
 .about-grid .about-grid__content {
     width: 80%;
@@ -811,6 +861,78 @@ p {
 /* HAKKIMIZDA SAYFA İÇERİĞİ 
 -------------------------------------------------- */
 
+=======
+
+.about-grid .about-grid__content {
+    width: 80%;
+    padding-top: 20px;
+}
+
+.about-grid .about-grid__content .info-text {
+    padding: 26px 32% 26px 26px;
+    background-color: #CCCCCC;
+    font-size: 14px;
+}
+
+.about-grid .about-grid__content .grid-slice {
+    background: url(../images/slice.jpg) left top no-repeat;
+    height: 7px;
+    display: block;
+}
+
+.about-grid .about-grid__content .normal-text {
+    padding: 24px 34% 0 26px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.content-page p {
+    line-height: 1.5em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.about-grid .about-grid__img {
+    width: 44%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.borderimg {
+    border: 18px solid #E3E3E3 !important;
+}
+
+.img-responsive,
+    {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.img-responsive,
+.figure > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* HAKKIMIZDA SAYFA İÇERİĞİ 
+-------------------------------------------------- */
+
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 /* SINGLE PAGE LIGHTBOX IMAGE GALLERY 
 -------------------------------------------------- */
 
@@ -903,6 +1025,8 @@ p .web .fa-desktop {
 
 /* İLETİŞİM SAYFA İÇERİĞİ 
 -------------------------------------------------- */
+<<<<<<< HEAD
+=======
 
 /* ARAÇ ALMAK İSTİYORUM SAYFA İÇERİĞİ 
 -------------------------------------------------- */
@@ -928,10 +1052,39 @@ p .web .fa-desktop {
     background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%)!important;
     height: 33px!important;
 }
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 
 /* ARAÇ ALMAK İSTİYORUM SAYFA İÇERİĞİ 
 -------------------------------------------------- */
 
+<<<<<<< HEAD
+.form-header {
+    color: red;
+    padding-left: 0px!important;
+    font-weight: bold;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.carbuy {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da!important;
+    text-align: center!important;
+    font-size: 13px;
+    color: #444;
+    margin-top:2.5px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%)!important;
+    height: 33px!important;
+}
+
+/* ARAÇ ALMAK İSTİYORUM SAYFA İÇERİĞİ 
+-------------------------------------------------- */
+
+=======
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 /* FOOTER 
 -------------------------------------------------- */
 
@@ -993,6 +1146,7 @@ footer {
 /* FOOTER 
 -------------------------------------------------- */
 
+<<<<<<< HEAD
 @media (max-width: 320px) {
     
     
@@ -1008,6 +1162,8 @@ footer {
     
  
 }
+=======
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 
 @media (min-width: 576px) and (max-width: 767px) {
     
@@ -1018,7 +1174,10 @@ footer {
         font-size: 0.5rem;
         font-weight: 500;
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 05346f8ed131398e8efff0ebce1bbf6b65fc9feb
 }
 /* Medium devices (tablets, 768px and up) */
 
