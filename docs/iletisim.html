@@ -1,90 +1,217 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Bu kod kullanıcının cihazında görünür alanı sabitleyecektir.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Internet Explorer Uyumluluk Görünüm Meta Tag-->
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-    <meta name="keywords" content="eğitim, bilgisayar, yazılım, HTML, PHP, CSS" />
-    <meta name="description" content="Bilişim Konusunda En Kapsamlı Web Sitesi" />
+    <meta name="keywords" content="Bursa oto galeri, Bursa otomobil galeri, Bursa 2. el otomobil" />
+    <meta name="description" content="Kurumsal Oto Galeri Teması" />
     <meta name="author" content="Volkan Korkmaz, Adnan Erdoğan" />
+    <!--Güncel sayfanın dizine eklenmesini raporlar; bağlantıların ve linklerin izlenmesini botlara bildirir.-->
     <meta name="robots" content="index; follow" />
     <meta name="copyright" content="(c) 2014 egitimkanalim.com Tüm Hakları Saklıdır." />
     <meta name="designer" content="A & V Yazılım" />
     <meta name="generator" content="Brackets, Sublime Text" />
     <meta name="publisher" content="Eğitim Kanalım" />
     <meta name="reply-to" content="info@egitimkanalim.com" />
-    <title>Galeri Şafak | Bursa 2.el oto, 2.el oto otomatik vites, sahibinden 2.el araç</title>
     <!--Style CSS-->
     <link href="css/style.css" rel="stylesheet">
-    <!--Responsive Bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!--Bootstrap CSS-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!--Smart Menü CSS-->
     <link href="css/smartmenus.bootstrap-4.css" rel="stylesheet">
-    <!-- Adnan'ın Yazdığı Search CSS-->
-    <link href="css/main.css" rel="stylesheet">
+    <!--Chosen CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <!--Chosen CSS-->
+    <link href="css/chosen.css" rel="stylesheet">
     <!--Font-awesome CSS-->
-    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.png" />
+    <title>Galeri Şafak | Bursa Oto Galeri, Bursa Otomobil Galeri, Bursa 2. El Otomobil</title>
 </head>
 
 <body>
     <div class="container">
         <header id="header" class="mt-4">
-            <div class="row">
+            <div class="row header">
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                    <div class="logo"><img class="img-fluid" src="images/logo.png" alt="Galeri Şafak"></div>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Galeri Şafak" class="img-fluid">
+                    </div>
+                    <!--. logo-->
                 </div>
-                <!--. close col-lg-5 col-md-5 col-sm-5 col-xs-5-->
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-xs-none d-none d-lg-block d-md-block d-sm-block">
-                    <p class="float-left"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Barış Mh. İzmir Yolu No : 310 - Nilüfer / BURSA</p>
-                    <p class="float-right"><i class="fa fa-phone-square mr-2" aria-hidden="true"></i>0 224 443 03 30</p>
-                    <div class="clearfix"></div>
-                    <p class="float-left"><i class="fa fa-envelope mr-2" aria-hidden="true"></i>info@safakgaleri.com</p>
-                    <p class="float-right"><i class="fa fa-fax mr-2" aria-hidden="true"></i>0 224 443 70 30</p>
+                <!--. col-lg-5 col-md-5 col-sm-5 col-xs-5-->
+
+                <!--Burada "display d-none" kuralının ufak cihazlar için "none" değerini almasını diğer cihazlar için "block" değerini almasını söylüyoruz-->
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 d-none d-sm-block float-right">
+                    <div class="location">
+                        <p class="float-left"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Barış Mh. İzmir Yolu No : 310 - Nilüfer / BURSA</p>
+                        <p class="float-right"><i class="fa fa-phone-square mr-2" aria-hidden="true"></i>0 224 443 03 30</p>
+                        <p class="clearfix"></p>
+                        <p class="float-left"><i class="fa fa-envelope mr-2" aria-hidden="true"></i>info@safakgaleri.com</p>
+                        <p class="float-right"><i class="fa fa-fax mr-2" aria-hidden="true"></i>0 224 443 70 30</p>
+                    </div>
+                    <!--. location-->
                 </div>
-                <!--. close col-lg-5 col-md-5 col-sm-5 col-xs-5-->
+                <!--. col-lg-7 col-md-7 col-sm-7 col-xs-7 d-none d-sm-block-->
             </div>
-            <!--. close row-->
+            <!--. row-header-->    
         </header>
-        <!-- /header -->
-        <!-- PANEL VE LOGOLAR -->
-        <div class="panel my-4">
-            <div class="logos">
-                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-                    <a href="#"><span><img src="images/logo/audi.png" alt="AUDI"></span><p>AUDI</p></a>
-                    <a href="#"><span><img src="images/logo/bmw.png" alt="BMW"></span><p>BMW</p></a>
-                    <a href="#"><span><img src="images/logo/chevrolet.png" alt="CHEVROLET"></span><p>CHEVROLET</p></a>
-                    <a href="#"><span><img src="images/logo/citroen.png" alt="CITROEN"></span><p>CITROEN</p></a>
-                    <a href="#"><span><img src="images/logo/daihatsu.png" alt="DAIHATSU"></span><p>DAIHATSU</p></a>
-                    <a href="#"><span><img src="images/logo/fiat.png" alt="FIAT"></span><p>FIAT</p></a>
-                    <a href="#"><span><img src="images/logo/ford.png" alt="FORD"></span><p>FORD</p></a>
-                    <a href="#"><span><img src="images/logo/honda.png" alt="HONDA"></span><p>HONDA</p></a>
-                    <a href="#"><span><img src="images/logo/hyundai.png" alt="HYUNDAI"></span><p>HYUNDAI</p></a>
-                    <a href="#"><span><img src="images/logo/kia.png" alt="KIA"></span><p>KIA</p></a>
-                    <a href="#"><span><img src="images/logo/lancia.png" alt="LANCIA"></span><p>LANCIA</p></a>
-                    <a href="#"><span><img src="images/logo/landrover.png" alt="LAND ROVER"></span><p>LAND ROVER</p></a>
-                    <a href="#"><span><img src="images/logo/mercedes.png" alt="MERCEDES"></span><p>MERCEDES</p></a>
-                    <a href="#"><span><img src="images/logo/nissan.png" alt="NISSAN"></span><p>NISSAN</p></a>
-                    <a href="#"><span><img src="images/logo/opel.png" alt="OPEL"></span><p>OPEL</p></a>
-                    <a href="#"><span><img src="images/logo/peugeot.png" alt="PEUGEOT"></span><p>PEUGEOT</p></a>
-                    <a href="#"><span><img src="images/logo/range-rover.png" alt="RANGE ROVER"></span><p>RANGE ROVER</p></a>
-                    <a href="#"><span><img src="images/logo/renault.png" alt="RENAULT"></span><p>RENAULT</p></a>
-                    <a href="#"><span><img src="images/logo/seat.png" alt="SEAT"></span><p>SEAT</p></a>
-                    <a href="#"><span><img src="images/logo/suzuki.png" alt="SUZUKI"></span><p>SUZUKI</p></a>
-                    <a href="#"><span><img src="images/logo/toyota.png" alt="TOYOTA"></span><p>TOYOTA</p></a>
-                    <a href="#"><span><img src="images/logo/volkswagen.png" alt="VOLKSWAGEN"></span><p>VOLKSWAGEN</p></a>
-                    <a href="#"><span><img src="images/logo/mitsubishi.png" alt="MITSUBISHI"></span><p>MITSUBISHI</p></a>
-                    <a href="#"><span><img src="images/logo/skoda.png" alt="SCODA"></span><p>SCODA</p></a>
-                </marquee>
+        <!--. header-->
+         <div class="row links">
+            <div class="col-sm-6 d-none d-sm-block">
+                <a href="aracalis.html" class="buy">
+                    <img src="images/arac-almak-istiyorum-01.jpg" alt="araç almak istiyorum" class="img-fluid">
+                </a>
             </div>
-            <!--logos sonu-->
+            <div class="col-sm-6 d-none d-sm-block">
+                <a href="aracsatis.html" class="sell">
+                    <img src="images/arac-satmak-istiyorum-01.jpg" alt="araç satmak istiyorum" class="img-fluid">
+                </a>
+            </div>
         </div>
-        <!--panel close-->
+        <div class="clearfix"></div>
         <!-- PANEL VE LOGOLAR -->
+        <!--my-4 sınıfı alt ve üstten margin vermemizi sağlar.-->
+        <div class="panel logos mb-4">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:33px;" src="images/spin.svg" />
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/audi.png" alt="AUDI"></span>
+                            <p>AUDI</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/skoda.png" alt="SKODA"></span>
+                            <p>SKODA</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/bmw.png" alt="BMW"></span>
+                            <p>BMW</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/chevrolet.png" alt="CHEVROLET"></span>
+                            <p>CHEVROLET</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/citroen.png" alt="CİTROEN"></span>
+                            <p>CİTROEN</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/daihatsu.png" alt="DAIHATSU"></span>
+                            <p>DAIHATSU</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/fiat.png" alt="FIAT"></span>
+                            <p>FIAT</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/ford.png" alt="FORD"></span>
+                            <p>FORD</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/honda.png" alt="HONDA"></span>
+                            <p>HONDA</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/hyundai.png" alt="HYUNDAI"></span>
+                            <p>HYUNDAI</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/kia.png" alt="KİA"></span>
+                            <p>KİA</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/lancia.png" alt="LANCIA"></span>
+                            <p>LANCIA</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/landrover.png" alt="LAND ROVER"></span>
+                            <p>LAND ROVER</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/mercedes.png" alt="MERCEDES"></span>
+                            <p>MERCEDES</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/nissan.png" alt="NISSAN"></span>
+                            <p>NISSAN</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/opel.png" alt="OPEL"></span>
+                            <p>OPEL</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/peugeot.png" alt="PEUGEOT"></span>
+                            <p>AUDI</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/range-rover.png" alt="RANGE ROVER"></span>
+                            <p>PEUGEOT</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/renault.png" alt="RENAULT"></span>
+                            <p>RENAULT</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/seat.png" alt="SEAT"></span>
+                            <p>SEAT</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/suzuki.png" alt="SUZUKİ"></span>
+                            <p>SUZUKİ</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/toyota.png" alt="TOYOTA"></span>
+                            <p>TOYOTA</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/volkswagen.png" alt="VOLKSWAGEN"></span>
+                            <p>VOLKSWAGEN</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-p="30.00"><span><img data-u="image" src="images/logo/mitsubishi.png" alt="MITSUBISHI"></span>
+                            <p>MITSUBISHI</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion Jssor Slider End -->
 
         <!-- Navbar -->
+        <!--mb-4 sınıfı alt ve üstten margin rounded ise border-radius vermemizi sağlar. Default border-radius değeri 2'dir.-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
             <a class="navbar-brand" href="index.html">Şafak Galeri</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -140,18 +267,252 @@
                     <span class="input-group-btn"><button id="car_search_button" class="btn btn-success" type="button">Ara</button></span>
                     <!-- Example single danger button -->
                     <div class="btn-group">
-                        <button id="detail_search_button" type="button" class="btn btn-success dropdown-toggle m-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Detaylı Ara
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
+                        <button type="button" class="btn btn-success m-2" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                         Detaylı Ara
+                     </button>
                     </div>
                 </form>
             </div>
+            <!--.collapse navbar-collapse #navbarNavDropdown-->
         </nav>
 
-        <section>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <!--Birinci Satır-->
+                <div class="form-row">
+                    <!--Marka-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Marka" class="chosen-select" tabindex="1">
+                                <option value="0" class="#"></option> 
+                                <option value="1" class="#">BMW</option>                  
+                                <option value="2" class="#">Mercedes</option>
+                                <option value="3" class="#">Dacia</option>
+                                <option value="4" class="#">Tofaş</option>
+                        </select>
+                    </div>
+                    <!--Marka-->
+
+                    <!--Model-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Model" class="chosen-select" tabindex="2">
+                                <option value="0" selected></option> 
+                                <option value="1">SERIES 1</option>                  
+                                <option value="2">SERIES 2</option>
+                                <option value="3">SLS AMG</option>
+                                <option value="4">CLK</option>
+                                <option value="5">Duster</option>
+                                <option value="6">Stepway</option>
+                                <option value="7">Logan</option>
+                                <option value="8">Murat 131</option>
+                                <option value="9">Murat 124</option>
+                        </select>
+                    </div>
+                    <!--Model-->
+
+                    <!--Kasa Tipi-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Kasa Tipi" class="chosen-select" tabindex="3">
+                                <option value="0" "selected"></option> 
+                                <option value="1">Cabrio</option>                  
+                                <option value="2">Coupe</option>
+                                <option value="3">Sedan</option>
+                                <option value="4">Pick-Up</option>
+                                <option value="5">SUV</option>
+                                <option value="6">Kamyonet</option>
+                                <option value="7">Station Wagon</option>
+                                <option value="8">Hatchback</option>
+                                <option value="9">Van / Panelvan</option>
+                                <option value="9">Minibüs</option>
+                            </select>
+                    </div>
+                    <!--Kasa Tipi-->
+
+                    <!--Ödeme Türü-->
+                    <div class="col-sm-1">
+
+
+                        <select data-placeholder="TL" class="chosen-select TL" tabindex="9">
+                                <option value="0"></option> 
+                                <option value="1">TL</option>
+                                <option value="2">USD</option>                  
+                                <option value="3">EURO</option>
+                            </select>
+
+                    </div>
+                    <!--Ödeme Türü-->
+
+                    <!--Fiyat-->
+                    <div class="col-sm-1 price">
+                        <div class="select-price">
+                            <input type="text" placeholder="Fiyat" class="fiyat" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="select-price">
+                            <input type="text" placeholder="Fiyat" class="fiyat" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <!--Fiyat-->
+
+                </div>
+                <!--. close form-row-->
+
+                <!--İkinci Satır-->
+                <div class="form-row">
+                    <!--İl-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="İl" class="chosen-select" tabindex="4">
+                                    <option value="0"></option>
+                                    <option value="01">Adana</option>
+                                    <option value="06">Ankara</option>
+                                    <option value="07">Antalya</option>
+                                    <option value="09">Aydın</option>
+                                    <option value="10">Balıkesir</option>
+                                    <option value="16">Bursa</option>
+                                    <option value="17">Çanakkale</option>
+                                    <option value="19">Çorum</option>
+                                    <option value="20">Denizli</option>
+                                    <option value="21">Diyarbakır</option>
+                                    <option value="25">Erzurum</option>
+                                    <option value="26">Eskişehir</option>
+                                    <option value="27">Gaziantep</option>
+                                    <option value="28">Giresun</option>
+                                    <option value="31">Hatay</option>
+                                    <option value="34">İstanbul</option>
+                                    <option value="35">İzmir</option>
+                                    <option value="46">Kahramanmaraş</option>
+                                    <option value="38">Kayseri</option>
+                                    <option value="41">Kocaeli</option>
+                                    <option value="42">Konya</option>
+                                    <option value="44">Malatya</option>
+                                    <option value="45">Manisa</option>
+                                    <option value="33">Mersin</option>
+                                    <option value="54">Sakarya</option>
+                                    <option value="55">Samsun</option>
+                                    <option value="63">Şanlıurfa</option>
+                                    <option value="61">Trabzon</option>
+                        </select>
+                    </div>
+                    <!--İl-->
+
+                    <!--Aktarma Türü-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Aktarma Türü" class="chosen-select" tabindex="5">
+                                <option value="0"></option> 
+                                <option value="1">4x4</option>                  
+                                <option value="2">Önden Çekiş</option>
+                                <option value="3">Arkadan İtiş</option>
+                        </select>
+                    </div>
+                    <!--Aktarma Türü-->
+
+                    <!--Motor Hacmi-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Motor Hacmi" class="chosen-select" tabindex="6">
+                                <option value="0"></option> 
+                                <option value="1">0 - 1000 cm<sup>3</sup></option>                  
+                                <option value="2">1001 - 1200 cm<sup>3</sup></option>
+                                <option value="3">1201 - 1400 cm<sup>3</sup></option>
+                                <option value="4">1401 - 1600 cm<sup>3</sup></option>
+                                <option value="5">1601 - 1800 cm<sup>3</sup></option>
+                                <option value="6">1801 - 2000 cm<sup>3</sup></option>
+                                <option value="7">2001 cm<sup>3</sup> ve üzeri</option>
+                        </select>
+                    </div>
+                    <!--Motor Hacmi-->
+
+                    <!--Km-->
+                    <div class="col-sm-1 km">
+                        <label class="selectboxlabelkm">Km</label>
+                    </div>
+                    <!--Km-->
+                    <!--Km-->
+                    <div class="col-sm-1 km">
+                        <div class="select-km">
+
+                            <input type="text" placeholder="Km" class="kmLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <!--Km-->
+
+                    <!--Km-->
+                    <div class="col-sm-1 km">
+                        <div class="select-km">
+                            <input type="text" placeholder="Km" class="kmLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <!--Km-->
+
+                </div>
+                <!--. close form-row-->
+
+                <!--Üçüncü Satır Satır-->
+                <div class="form-row">
+                    <!--Şanzıman-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Şanzıman" class="chosen-select" tabindex="7">
+                                <option value="0"></option> 
+                                <option value="1">Manuel</option>                  
+                                <option value="2">Otomatik</option>
+                        </select>
+                    </div>
+                    <!--Şanzıman-->
+
+                    <!--Yakıt Tipi-->
+                    <div class="col-sm-3">
+                        <select data-placeholder="Yakıt Tipi" class="chosen-select" tabindex="8">
+                                <option value="0"></option> 
+                                <option value="1">Benzin</option>                  
+                                <option value="2">Dizel</option>
+                                <option value="2">LPG</option>
+                        </select>
+                    </div>
+                    <!--Yakıt Tipi-->
+
+                    <div class="col-sm-3 auto"></div>
+                    <!--Yıl-->
+                    <div class="col-sm-1">
+                        <label class="selectboxlabelyear">Yıl</label>
+                    </div>
+                    <!--Yıl-->
+                    <!--Yıl-->
+                    <div class="col-sm-1 year">
+                        <div class="select-year">
+
+                            <input type="text" placeholder="Yıl" class="yearLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <!--Yıl-->
+
+                    <!--Yıl-->
+                    <div class="col-sm-1 year">
+                        <div class="select-year">
+                            <input type="text" placeholder="Yıl" class="yearLabel" data-v-min="0" data-v-max="9999999" id="" style="width: 67px!important;height:26px!important">
+                        </div>
+                    </div>
+                    <!--Yıl-->
+
+                </div>
+                <!--. close form-row-->
+
+
+                <div class="form-row mt-2">
+
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-danger float-right">ARA</button>
+
+                        <button type="button" class="btn btn-dark float-right">ARAMAYI TEMİZLE</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--. close card card-body-->
+        </div>
+        <!--. close collapse #collapseExample-->
+
+        <section id="section">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -253,8 +614,8 @@
         </section>
         <div id="topcontrol" title="Sayfa Başına Dön" style="position: fixed; bottom: 25px; right: 25px; opacity: 1; cursor: pointer;"><a href="javascript:;"></a>
             <img src="images/top.png" class="img-fluid"></div>
-        <footer class="my-4">
-            <div class="row">
+        <footer id="footer" class="my-4">
+            <div class="row footer">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     <img src="images/footer_logo.png" alt="Galeri Şafak" class="img-fluid">
                 </div>
@@ -285,12 +646,24 @@
                 <small>2017 | Copright &copy; | Tasarım : A&V Yazılım | <a href="https://www.egitimkanalim.com" target="_blank">www.egitimkanalim.com</a></small>
             </div>
         </footer>
-    </div>
-    <!-- /container close-->
 
+
+
+
+    </div>
+    <!--. container-->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Jquery JS-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- JS dosyalarının çalışıp çalışmadığının kontrolü -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- Bu tooltipler sayesinde JS kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="js/bootstrap.js"></script>
@@ -298,14 +671,68 @@
     <script src="js/jquery.smartmenus.js"></script>
     <!-- SmartMenus jQuery Bootstrap Addon -->
     <script src="js/jquery.smartmenus.bootstrap-4.js"></script>
-    <!-- Adnan'ın Search için yazdığı script -->
-    <script src="js/search.js"></script>
-    <!-- Bu tooltipler sayesinde js kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
+     <!--Chosen JS-->
+    <script src="js/chosen.jquery.js"></script>
+    <!--Chosen JS-->
+    <script src="js/prism.js"></script>
+    <!--Chosen JS-->
+    <script src="js/init.js"></script>
+    <!--LİNKS HOVER JS-->
+    <script src="js/links.js"></script>
+    <!-- Bu tooltipler sayesinde JS kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
     <script>
-        // Init tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
     </script>
-    <!-- Sayfa Başına Dönme Butonu JS -->
+    <!-- JSSOR JS-->
+    <script src="js/jssor.slider-26.9.0.min.js"></script>
+    <!-- JSSOR JS-->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $Idle: 0,
+                $SlideDuration: 5000,
+                $SlideEasing: $Jease$.$Linear,
+                $PauseOnHover: 4,
+                $SlideWidth: 140,
+                $Cols: 7,
+                $Align: 0
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+
+    </script>
+    <!--Yukarı Git Butonu-->
     <script>
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) /* Sayfa ne kadar aşağı kayarsa buton görünsün. 100 sayısı = Kaydırma çubuğunun piksel konumu. Bu sayı değiştirilebilir. */
@@ -325,8 +752,10 @@
                 return false;
             });
         });
-    </script>
 
+    </script>
+    <!-- Search script -->
+    <script src="js/search.js"></script>
 </body>
 
 </html>

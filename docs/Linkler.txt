@@ -1,0 +1,17 @@
+<div class="row float-right">
+                    <div id="links">
+                        <div class="col-sm-12">
+                            <a href="aracalis.html" class="buy">
+                                <img src="images/arac-almak-istiyorum-01.jpg" alt="araç almak istiyorum" class="img-fluid">
+                            </a>
+                       
+                            <a href="aracsatis.html" class="sell">
+                                <img src="images/arac-satmak-istiyorum-01.jpg" alt="araç satmak istiyorum" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <!--# link-->
+                </div>
+
+ mx-auto d-none d-sm-block
+ mx-auto d-none d-sm-block

@@ -1,0 +1,56 @@
+@media (max-width: 320px) {
+    
+    #links {
+        width: 100%;
+        display: flex;
+    }
+    
+    
+}
+
+/* Small devices (landscape phones, 320px and up) */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    
+    #links {
+        width: 100%;
+        display: flex;
+    }
+    
+    #links .sell {
+        float: right;
+        margin-left: auto;
+    }
+    
+    #links .buy {
+        float: left;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    .location > p {
+        font-size: 0.5rem;
+    } 
+    label.aracsatis {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    #links a {
+        width: 230px;
+    }
+}
+ js kodu
+$(document).ready(function(){
+    $(".buy img").hover(function(){
+        $(this).attr("src", "images/arac-almak-istiyorum-02.jpg");
+        }, function(){
+        $(this).attr("src", "images/arac-almak-istiyorum-01.jpg");
+    });
+    $(".sell img").hover(function(){
+        $(this).attr("src", "images/arac-satmak-istiyorum-02.jpg");
+        }, function(){
+        $(this).attr("src", "images/arac-satmak-istiyorum-01.jpg");
+    });
+});
