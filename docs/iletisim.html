@@ -38,7 +38,7 @@
 <body>
     <div class="container">
         <header id="header" class="mt-4">
-            <div class="row-header">
+            <div class="row header">
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                     <div class="logo">
                         <img src="images/logo.png" alt="Galeri Şafak" class="img-fluid">
@@ -59,15 +59,22 @@
                     <!--. location-->
                 </div>
                 <!--. col-lg-7 col-md-7 col-sm-7 col-xs-7 d-none d-sm-block-->
-                <div id="links" class="mb-0">
-                    <a href="aracalis.html" class="buy">Araç Almak İstiyorum</a>
-    		        <a href="aracsatis.html" class="sell">Araç Satmak İstiyorum</a>
-                </div>
-                <!--# link-->
             </div>
-            <!--. row-header-->
+            <!--. row-header-->    
         </header>
         <!--. header-->
+         <div class="row links">
+            <div class="col-sm-6 d-none d-sm-block">
+                <a href="aracalis.html" class="buy">
+                    <img src="images/arac-almak-istiyorum-01.jpg" alt="araç almak istiyorum" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-sm-6 d-none d-sm-block">
+                <a href="aracsatis.html" class="sell">
+                    <img src="images/arac-satmak-istiyorum-01.jpg" alt="araç satmak istiyorum" class="img-fluid">
+                </a>
+            </div>
+        </div>
         <div class="clearfix"></div>
         <!-- PANEL VE LOGOLAR -->
         <!--my-4 sınıfı alt ve üstten margin vermemizi sağlar.-->
@@ -670,6 +677,8 @@
     <script src="js/prism.js"></script>
     <!--Chosen JS-->
     <script src="js/init.js"></script>
+    <!--LİNKS HOVER JS-->
+    <script src="js/links.js"></script>
     <!-- Bu tooltipler sayesinde JS kodlarının çalışıp çalışmadığını anlayabiliriz.. -->
     <script>
         $(function() {
