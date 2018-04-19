@@ -118,33 +118,26 @@ body {
     float: left;
 }
 
-#links {
+.links {
 	float:right; 
-	height:37px; 
-	margin-top:30px;
+	 
+	
 }
-#links a {
-	width:244px; 
-	height:37px; 
-	text-indent:-1500px; 
-	display:block; 
-	float:left; 
-	margin:0 3px; 
-	border-radius:4px 4px 0 0;
-}
-#links a.buy {
-	background:url(../images/arac-almak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-#links a.buy:hover {
-	background:url(../images/arac-almak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-#links a.sell {
-	background:url(../images/arac-satmak-istiyorum-01.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-#links a.sell:hover {
-	background:url(../images/arac-satmak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+.links a { 
+    
+	 
+	 
+	
 }
 
+
+.links a img .buy:hover {
+	background:url(../images/arac-almak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.links a img .sell:hover {
+	background:url(../images/arac-satmak-istiyorum-02.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
 /* LOCATION AND LOGO
 -------------------------------------------------- */
 
@@ -1000,8 +993,21 @@ footer {
 /* FOOTER 
 -------------------------------------------------- */
 
+@media (max-width: 320px) {
+    
+    
+    
+    
+}
 
 /* Small devices (landscape phones, 320px and up) */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    
+   
+    
+ 
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
     
@@ -1012,6 +1018,7 @@ footer {
         font-size: 0.5rem;
         font-weight: 500;
     }
+    
 }
 /* Medium devices (tablets, 768px and up) */
 
